@@ -72,8 +72,6 @@ class _ProdutosPageState extends State<ProdutosPage> {
           context: context,
           builder: (context) => new CupertinoAlertDialog(
             content: new Container(
-
-            
               width: 40.0,
               child: Column(
                 children: <Widget>[
@@ -92,10 +90,7 @@ class _ProdutosPageState extends State<ProdutosPage> {
                         icon: Icon(Icons.arrow_drop_up),
                         label: Text(''),
                         onPressed: () {
-                          setState(() {});
-                          // print("Opa");
                           provider.addQuantidade(produtosModel);
-                          // print("provider get: ${provider.getQuantidade(produtosModel)}");
                         },
                       ),
                       Center(
@@ -105,10 +100,7 @@ class _ProdutosPageState extends State<ProdutosPage> {
                         icon: Icon(Icons.arrow_drop_down),
                         label: Text(""),
                         onPressed: () {
-                          setState(() {});
-                          // print("bb");
                           provider.removeQuantidade(produtosModel);
-                          // print("aaa: ${provider.getQuantidade(produtosModel)}");
                         },
                       ),
                     ],
